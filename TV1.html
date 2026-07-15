@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming Habits & Binge Survey</title>
+</head>
+<body>
+
+    <h1 id="title">Streaming Habits & Binge Survey</h1>
+    <p id="description">Tell us how you watch, what you binge, and how your screen time stacks up!</p>
+
+    <form id="survey-form">
+        
+        <!-- Name Field -->
+        <div>
+            <label id="name-label" for="name">Name:</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+        </div>
+
+        <!-- Email Field -->
+        <div>
+            <label id="email-label" for="email">Email:</label>
+            <input id="email" type="email" placeholder="Enter your email address" required>
+        </div>
+
+        <!-- Number Field -->
+        <div>
+            <label id="number-label" for="number">Weekly Watch Hours:</label>
+            <input id="number" type="number" min="1" max="168" placeholder="Estimated hours (1-168)">
+        </div>
+
+        <!-- Dropdown Field -->
+        <div>
+            <label for="dropdown">What is your primary streaming device?</label>
+            <select id="dropdown">
+                <option value="" disabled selected>Select your device</option>
+                <option value="smart-tv">Smart TV / Streaming Stick</option>
+                <option value="laptop">Laptop / Desktop Computer</option>
+                <option value="smartphone">Smartphone / Tablet</option>
+                <option value="console">Gaming Console</option>
+            </select>
+        </div>
+
+        <!-- Radio Buttons Group -->
+        <div>
+            <p>How often do you "binge-watch" (3+ episodes in one sitting)?</p>
+            <label>
+                <input type="radio" name="binge-frequency" value="always" checked> Almost every time I watch
+            </label>
+            <label>
+                <input type="radio" name="binge-frequency" value="sometimes"> Sometimes (Weekends/Holidays)
+            </label>
+            <label>
+                <input type="radio" name="binge-frequency" value="rarely"> Rarely / I prefer one episode at a time
+            </label>
+        </div>
+
+        <!-- Checkboxes Group -->
+        <div>
+            <p>Which streaming services do you actively use? (Check all that apply)</p>
+            <label>
+                <input type="checkbox" value="netflix"> Netflix
+            </label>
+            <label>
+                <input type="checkbox" value="prime"> Amazon Prime Video
+            </label>
+            <label>
+                <input type="checkbox" value="disney"> Disney+ / Hulu
+            </label>
+            <label>
+                <input type="checkbox" value="youtube"> YouTube (Premium/TV)
+            </label>
+            <label>
+                <input type="checkbox" value="max"> Max (HBO)
+            </label>
+        </div>
+
+        <!-- Textarea Field -->
+        <div>
+            <label for="comments">What is the last show you absolutely couldn't stop watching? Tell us why!</label>
+            <textarea id="comments" placeholder="Share your latest obsession here..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+            <button id="submit" type="submit">Submit Survey</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
